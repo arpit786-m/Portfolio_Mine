@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Arpit Mishra - Data Analyst & Web Developer Portfolio">
+    <title>Arpit Mishra | Portfolio</title>
+    
+    <link rel="icon" type="image/png" href="docs/image2.png">
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script defer src="script.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="brand-link">
+            <h2 class="brand-logo">
+                <img src="docs/image2.png" alt="Logo" class="brand-icon">
+                Arpit.dev
+            </h2>
+        </a>
+
+        <div class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button onclick="switchTheme()" class="theme-btn">🌓</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="intro-area" id="home">
+        <div class="intro-wrapper">
+            <div class="avatar-box">
+                <img src="docs/download.jpg" alt="Arpit Mishra" class="my-avatar" />
+            </div>
+            
+            <h1 class="main-heading">Hi, I'm <span class="text-highlight">Arpit Mishra</span></h1>
+            
+            <div class="role-wrapper">
+                <h2 class="dynamic-text">Data Analyst & Web Developer</h2>
+            </div>
+
+            <p class="sub-text">Turning complex data into insights and code into solutions.</p>
+            
+            <div class="action-buttons">
+                <a href="#work" class="btn primary">View My Work</a>
+                <a href="docs\Arpit_Mishra_Resume (W) (5).pdf" class="btn outline" download>Download CV <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="about">
+        <div class="section-header">
+            <h1>About Me</h1>
+            <p>My Journey, Education & Experience</p>
+        </div>
+        
+        <div class="profile-layout">
+            
+            <div class="info-card">
+                <h3><i class="fas fa-user-graduate"></i> The Story So Far</h3>
+                <p>
+                    I am a final-year student at **Mumbai University** pursuing a B.Sc. in Information Technology, holding a perfect **10.0 SGPA**. 
+                </p>
+                <p>
+                    Unlike a traditional resume, my passion lies in **building things**. Whether it's automating a PDF dispatch system or visualizing sales trends, I love the intersection of logic and creativity.
+                </p>
+                
+                <div class="highlights">
+                    <h4>🚀 Key Highlights</h4>
+                    <ul>
+                        <li><strong>1st Prize</strong> in Inter-College Coding Event.</li>
+                        <li><strong>College Council Member</strong> (2025-26).</li>
+                        <li>Certified in <strong>Python, WordPress, & OOP</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-card">
+                <h3><i class="fas fa-briefcase"></i> Professional Timeline</h3>
+                
+                <div class="job-entry">
+                    <div class="dot"></div>
+                    <div class="job-details">
+                        <span class="job-date">Mar 2024 – Apr 2024</span>
+                        <h4>Web Developer Intern</h4>
+                        <span class="company-name">CodSoft</span>
+                        <p>Developed interactive web apps and built automation scripts to optimize daily workflows.</p>
+                    </div>
+                </div>
+
+                <div class="job-entry">
+                    <div class="dot"></div>
+                    <div class="job-details">
+                        <span class="job-date">Oct 2023 – Nov 2023</span>
+                        <h4>Cloud Intern</h4>
+                        <span class="company-name">iFuture Technologies</span>
+                        <p>Managed Linux/VMware environments and handled server configurations.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="work">
+        <div class="section-header">
+            <h1>My Work</h1>
+            <p>Real-world applications of my skills</p>
+        </div>
+        
+        <div class="portfolio-grid">
+
+            <div class="work-card">
+                <div class="work-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="work-content">
+                    <h2>Sales Data Analysis</h2>
+                    <p>A Power BI project visualizing sales trends, customer behavior, and regional performance.</p>
+                    <div class="tech-tags">
+                        <span>Power BI</span><span>Data Analytics</span>
+                    </div>
+                    <a href="https://github.com/Arpit757/Sales_Dashboard" target="_blank" class="small-btn">View GitHub</a>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="work-content">
+                    <h2>Balloon Burst V2</h2>
+                    <p>Interactive game with dynamic DOM manipulation, score tracking, and audio effects.</p>
+                    <div class="tech-tags">
+                        <span>JavaScript</span><span>HTML5</span>
+                    </div>
+                    <a href="https://arpit786-m.github.io/First_Project_Updated_002/" target="_blank" class="small-btn">Play Live</a>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="work-content">
+                    <h2>Queue Mgmt System</h2>
+                    <p><strong>(In Progress)</strong> Automating customer flow to reduce wait times by 30%.</p>
+                    <div class="tech-tags">
+                        <span>Django</span><span>MySQL</span>
+                    </div>
+                    <button class="small-btn disabled" title="Work in Progress">In Progress 🚧</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="page-section" id="tech">
+        <div class="section-header">
+            <h1>Technical Arsenal</h1>
+            <p>Tools & Technologies I use</p>
+        </div>
+        
+        <div class="tech-wrapper">
+            <div class="tech-item">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-chart-bar"></i>
+                <p>Power BI</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-wordpress"></i>
+                <p>WordPress</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-html5"></i>
+                <p>HTML & CSS</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="contact">
+        <div class="section-header">
+            <h1>Let's Connect</h1>
+            <p>I'm always open to discussing new projects and opportunities.</p>
+        </div>
+
+        <div class="contact-box">
+            <div class="socials">
+                <a href="https://tinyurl.com/4pdr8dnr" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/arpit786-m" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Name" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <textarea id="message" placeholder="Message" rows="4" required></textarea>
+                <button type="submit" class="btn primary">Send</button>
+            </form>
+        </div>
+        <p id="status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Arpit Mishra. Built with Passion.</p>
+    </footer>
+
+</body>
+</html>
