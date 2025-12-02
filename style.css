@@ -330,9 +330,10 @@ footer { text-align: center; padding: 20px; font-size: 14px; opacity: 0.8; }
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
+        top: 80px;
+        right: 5%;
+        width: 50%;
+        border-radius: 15px;
         background: var(--nav-bg);
         padding: 20px 0;
         text-align: center;
@@ -354,3 +355,4 @@ footer { text-align: center; padding: 20px; font-size: 14px; opacity: 0.8; }
     cursor: pointer;
 
 }
+
