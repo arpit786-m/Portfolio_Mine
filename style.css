@@ -111,6 +111,14 @@ header {
     margin: 0 auto 20px auto;
 }
 
+.hero-mindset {
+    font-size: 18px;
+    color: var(--dark);
+    opacity: 0.85;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; max-width: 400px; }
