@@ -194,20 +194,21 @@ body.dark-mode .job-date { color: #aaa; }
 
 /* --- Portfolio Grid --- */
 .portfolio-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .work-card {
     background: var(--white);
     border-radius: 10px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
-    padding-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -224,7 +225,13 @@ body.dark-mode .job-date { color: #aaa; }
     font-size: 40px;
 }
 
-.work-content { padding: 20px; }
+.work-content { 
+    padding: 20px; 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
 
 .tech-tags span {
     background: #eee;
