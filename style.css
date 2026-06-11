@@ -357,6 +357,7 @@ footer { text-align:center; padding:30px; border-top:1px solid var(--card-border
 }
 
 @media (max-width:768px) {
+    nav { display: flex; align-items: center; }
     .mobile-menu-btn { display:block; }
     .nav-links {
         display:none; flex-direction:column; position:absolute;
