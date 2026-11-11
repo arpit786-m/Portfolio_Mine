@@ -76,8 +76,13 @@ function initNav() {
         document.body.style.overflow = '';
     }
 
-    // Expose globally for inline onclick (kept for safety)
-    window.toggleMenu = () => toggle.click();
+    // Expose a safe global for any legacy inline calls (no longer used in HTML)
+    window.toggleMenu = () => {
+        const isOpen = navList.classList.toggle('active');
+        toggle.classList.toggle('open', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    };
 }
 
 function initNavSmoothClose() {

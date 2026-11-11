@@ -226,8 +226,16 @@ button { font-family: inherit; }
     cursor: pointer;
     background: none;
     border: none;
-    padding: 6px;
+    padding: 10px;
     border-radius: var(--radius-sm);
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1001;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .hamburger-line {
@@ -2116,7 +2124,7 @@ footer {
         -webkit-backdrop-filter: blur(28px);
         border-top: 1px solid var(--border-1);
         gap: 2px;
-        z-index: 998;
+        z-index: 999;
         overflow-y: auto;
         box-sizing: border-box;
     }
