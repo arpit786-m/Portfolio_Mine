@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arpit786-m.github.io/sitemap.xml
+Sitemap: https://arpit786-m.github.io/Portfolio_Mine/sitemap.xml
